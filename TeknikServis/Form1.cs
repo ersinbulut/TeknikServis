@@ -44,5 +44,12 @@ namespace TeknikServis
             //fr.MdiParent = this;
             fr.Show();
         }
+
+        private void Btnistatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Frmİstatistik fr = new Formlar.Frmİstatistik();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
