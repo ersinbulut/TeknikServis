@@ -51,5 +51,12 @@ namespace TeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnMarkaİst_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmMarkalar fr = new Formlar.FrmMarkalar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
