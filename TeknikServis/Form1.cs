@@ -58,5 +58,12 @@ namespace TeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnCariListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmCariListesi fr = new Formlar.FrmCariListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
