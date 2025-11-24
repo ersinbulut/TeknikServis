@@ -70,6 +70,7 @@
             this.chartControl1.Diagram = simpleDiagram3D1;
             this.chartControl1.Location = new System.Drawing.Point(501, 1);
             this.chartControl1.Name = "chartControl1";
+            series1.LegendTextPattern = "{A}";
             series1.Name = "Series 1";
             series1.SeriesID = 0;
             series1.View = pie3DSeriesView1;
@@ -87,6 +88,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmCariler";
             this.Text = "FrmCariler";
+            this.Load += new System.EventHandler(this.FrmCariler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();

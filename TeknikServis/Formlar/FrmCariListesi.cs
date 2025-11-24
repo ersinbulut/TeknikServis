@@ -23,5 +23,7 @@ namespace TeknikServis.Formlar
         {
             gridControl1.DataSource= db.TBLCARI.ToList();
         }
+
+      
     }
 }
