@@ -39,7 +39,7 @@ namespace TeknikServis
         public DbSet<TBLPERSONEL> TBLPERSONEL { get; set; }
         public DbSet<TBLURUN> TBLURUN { get; set; }
         public DbSet<TBLURUNHAREKET> TBLURUNHAREKET { get; set; }
-        public DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
         public DbSet<TBLURUNKABUL> TBLURUNKABUL { get; set; }
+        public DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
     }
 }
