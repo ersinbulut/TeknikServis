@@ -178,5 +178,19 @@ namespace TeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnQrcodeolustur_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmQRCode fr = new Formlar.FrmQRCode();
+            //fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnFaturaListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmFaturaListesi fr = new Formlar.FrmFaturaListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
