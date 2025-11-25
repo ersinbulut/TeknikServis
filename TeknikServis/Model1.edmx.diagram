@@ -19,20 +19,19 @@
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLPERSONEL" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUN" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNHAREKET" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNKABUL" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNTAKIP" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLFATURABILGI_TBLCARI" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNHAREKET_TBLCARI" ManuallyRouted="false" />
-        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLCARI" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLPERSONEL_TBLDEPARTMAN" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLFATURABILGI_TBLPERSONEL" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLFATURADETAY_TBLFATURABILGI" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUN_TBLKATEGORI" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNHAREKET_TBLPERSONEL" ManuallyRouted="false" />
-        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLPERSONEL" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNHAREKET_TBLURUN" ManuallyRouted="false" />
-        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLURUN" ManuallyRouted="false" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNTAKIP_TBLURUN" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNKABUL" Width="1.5" PointX="8.25" PointY="6" />
+        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLCARI" />
+        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLPERSONEL" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

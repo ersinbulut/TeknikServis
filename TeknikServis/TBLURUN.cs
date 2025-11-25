@@ -17,7 +17,6 @@ namespace TeknikServis
         public TBLURUN()
         {
             this.TBLURUNHAREKET = new HashSet<TBLURUNHAREKET>();
-            this.TBLURUNKABUL = new HashSet<TBLURUNKABUL>();
             this.TBLURUNTAKIP = new HashSet<TBLURUNTAKIP>();
         }
     
@@ -32,7 +31,6 @@ namespace TeknikServis
     
         public virtual TBLKATEGORI TBLKATEGORI { get; set; }
         public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKET { get; set; }
-        public virtual ICollection<TBLURUNKABUL> TBLURUNKABUL { get; set; }
         public virtual ICollection<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
     }
 }
