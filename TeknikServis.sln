@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeknikServis", "TeknikServis\TeknikServis.csproj", "{0B0C0CB9-7F51-43F0-8A84-D8515F63799E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeknikServis_Web", "TeknikServis_Web\TeknikServis_Web.csproj", "{316D6111-D11C-4E8B-89AA-C14E746653E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0B0C0CB9-7F51-43F0-8A84-D8515F63799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B0C0CB9-7F51-43F0-8A84-D8515F63799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B0C0CB9-7F51-43F0-8A84-D8515F63799E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316D6111-D11C-4E8B-89AA-C14E746653E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316D6111-D11C-4E8B-89AA-C14E746653E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316D6111-D11C-4E8B-89AA-C14E746653E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316D6111-D11C-4E8B-89AA-C14E746653E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

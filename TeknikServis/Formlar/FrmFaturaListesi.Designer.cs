@@ -37,33 +37,33 @@
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lpPersonel = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.lpCari = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtVergiDairesi = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.txtSaat = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtSırano = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtSeri = new DevExpress.XtraEditors.TextEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.txtSırano = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtSaat = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtVergiDairesi = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.lpCari = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.lpPersonel = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lpPersonel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lpCari.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSaat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSırano.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeri.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSırano.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSaat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lpCari.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lpPersonel.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtID
@@ -156,6 +156,108 @@
             this.groupControl1.TabIndex = 19;
             this.groupControl1.Text = "FATURA İŞLEMLERİ";
             // 
+            // lpPersonel
+            // 
+            this.lpPersonel.Location = new System.Drawing.Point(103, 237);
+            this.lpPersonel.Name = "lpPersonel";
+            this.lpPersonel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lpPersonel.Properties.DisplayMember = "ADSOYAD";
+            this.lpPersonel.Properties.ValueMember = "ID";
+            this.lpPersonel.Size = new System.Drawing.Size(224, 20);
+            this.lpPersonel.TabIndex = 7;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(42, 240);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(55, 13);
+            this.labelControl9.TabIndex = 33;
+            this.labelControl9.Text = "PERSONEL:";
+            // 
+            // lpCari
+            // 
+            this.lpCari.Location = new System.Drawing.Point(103, 211);
+            this.lpCari.Name = "lpCari";
+            this.lpCari.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lpCari.Properties.DisplayMember = "ADSOYAD";
+            this.lpCari.Properties.ValueMember = "ID";
+            this.lpCari.Size = new System.Drawing.Size(224, 20);
+            this.lpCari.TabIndex = 6;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(67, 214);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(29, 13);
+            this.labelControl8.TabIndex = 31;
+            this.labelControl8.Text = "CARİ:";
+            // 
+            // txtVergiDairesi
+            // 
+            this.txtVergiDairesi.Location = new System.Drawing.Point(103, 185);
+            this.txtVergiDairesi.Name = "txtVergiDairesi";
+            this.txtVergiDairesi.Size = new System.Drawing.Size(224, 20);
+            this.txtVergiDairesi.TabIndex = 5;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(19, 188);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(78, 13);
+            this.labelControl5.TabIndex = 27;
+            this.labelControl5.Text = "VERGİ DAİRESİ:";
+            // 
+            // txtSaat
+            // 
+            this.txtSaat.Location = new System.Drawing.Point(103, 159);
+            this.txtSaat.Name = "txtSaat";
+            this.txtSaat.Size = new System.Drawing.Size(224, 20);
+            this.txtSaat.TabIndex = 4;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(67, 162);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(30, 13);
+            this.labelControl4.TabIndex = 25;
+            this.labelControl4.Text = "SAAT:";
+            // 
+            // txtTarih
+            // 
+            this.txtTarih.Location = new System.Drawing.Point(103, 133);
+            this.txtTarih.Name = "txtTarih";
+            this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
+            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
+            this.txtTarih.Size = new System.Drawing.Size(224, 20);
+            this.txtTarih.TabIndex = 3;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(62, 136);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(35, 13);
+            this.labelControl3.TabIndex = 23;
+            this.labelControl3.Text = "TARİH:";
+            // 
+            // txtSırano
+            // 
+            this.txtSırano.Location = new System.Drawing.Point(103, 107);
+            this.txtSırano.Name = "txtSırano";
+            this.txtSırano.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.txtSırano.Properties.MaskSettings.Set("mask", "AAAAAA");
+            this.txtSırano.Size = new System.Drawing.Size(224, 20);
+            this.txtSırano.TabIndex = 2;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(51, 110);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(46, 13);
+            this.labelControl2.TabIndex = 21;
+            this.labelControl2.Text = "SIRA NO:";
+            // 
             // txtSeri
             // 
             this.txtSeri.Location = new System.Drawing.Point(103, 81);
@@ -185,108 +287,6 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // txtSırano
-            // 
-            this.txtSırano.Location = new System.Drawing.Point(103, 107);
-            this.txtSırano.Name = "txtSırano";
-            this.txtSırano.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.txtSırano.Properties.MaskSettings.Set("mask", "AAAAA");
-            this.txtSırano.Size = new System.Drawing.Size(224, 20);
-            this.txtSırano.TabIndex = 2;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(51, 110);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(46, 13);
-            this.labelControl2.TabIndex = 21;
-            this.labelControl2.Text = "SIRA NO:";
-            // 
-            // txtTarih
-            // 
-            this.txtTarih.Location = new System.Drawing.Point(103, 133);
-            this.txtTarih.Name = "txtTarih";
-            this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
-            this.txtTarih.Size = new System.Drawing.Size(224, 20);
-            this.txtTarih.TabIndex = 3;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(62, 136);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(35, 13);
-            this.labelControl3.TabIndex = 23;
-            this.labelControl3.Text = "TARİH:";
-            // 
-            // txtSaat
-            // 
-            this.txtSaat.Location = new System.Drawing.Point(103, 159);
-            this.txtSaat.Name = "txtSaat";
-            this.txtSaat.Size = new System.Drawing.Size(224, 20);
-            this.txtSaat.TabIndex = 4;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(67, 162);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(30, 13);
-            this.labelControl4.TabIndex = 25;
-            this.labelControl4.Text = "SAAT:";
-            // 
-            // txtVergiDairesi
-            // 
-            this.txtVergiDairesi.Location = new System.Drawing.Point(103, 185);
-            this.txtVergiDairesi.Name = "txtVergiDairesi";
-            this.txtVergiDairesi.Size = new System.Drawing.Size(224, 20);
-            this.txtVergiDairesi.TabIndex = 5;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(19, 188);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(78, 13);
-            this.labelControl5.TabIndex = 27;
-            this.labelControl5.Text = "VERGİ DAİRESİ:";
-            // 
-            // lpCari
-            // 
-            this.lpCari.Location = new System.Drawing.Point(103, 211);
-            this.lpCari.Name = "lpCari";
-            this.lpCari.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lpCari.Properties.DisplayMember = "ADSOYAD";
-            this.lpCari.Properties.ValueMember = "ID";
-            this.lpCari.Size = new System.Drawing.Size(224, 20);
-            this.lpCari.TabIndex = 6;
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(67, 214);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(29, 13);
-            this.labelControl8.TabIndex = 31;
-            this.labelControl8.Text = "CARİ:";
-            // 
-            // lpPersonel
-            // 
-            this.lpPersonel.Location = new System.Drawing.Point(103, 237);
-            this.lpPersonel.Name = "lpPersonel";
-            this.lpPersonel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lpPersonel.Properties.DisplayMember = "ADSOYAD";
-            this.lpPersonel.Properties.ValueMember = "ID";
-            this.lpPersonel.Size = new System.Drawing.Size(224, 20);
-            this.lpPersonel.TabIndex = 7;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(42, 240);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(55, 13);
-            this.labelControl9.TabIndex = 33;
-            this.labelControl9.Text = "PERSONEL:";
-            // 
             // FrmFaturaListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,15 +301,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lpPersonel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lpCari.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSaat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSırano.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeri.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSırano.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSaat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lpCari.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lpPersonel.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
