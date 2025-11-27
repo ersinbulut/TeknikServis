@@ -213,5 +213,19 @@ namespace TeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnHaritalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmHarita fr = new Formlar.FrmHarita();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnRaporlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmRapor fr = new Formlar.FrmRapor();
+            //fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
