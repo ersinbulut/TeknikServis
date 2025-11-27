@@ -227,5 +227,19 @@ namespace TeknikServis
             //fr.MdiParent = this;
             fr.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Formlar.FrmAnaSayfa fr = new Formlar.FrmAnaSayfa();
+            fr.MdiParent=this;
+            fr.Show();
+        }
+
+        private void BtnAnaForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmAnaSayfa fr = new Formlar.FrmAnaSayfa();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

@@ -77,6 +77,7 @@
             this.BtnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
             this.BtnGauge = new DevExpress.XtraBars.BarButtonItem();
             this.BtnHaritalar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRaporlar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -104,7 +105,7 @@
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.BtnRaporlar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnAnaForm = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -160,9 +161,10 @@
             this.BtnFaturaListesi,
             this.BtnGauge,
             this.BtnHaritalar,
-            this.BtnRaporlar});
+            this.BtnRaporlar,
+            this.BtnAnaForm});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 49;
+            this.ribbonControl1.MaxItemId = 50;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -574,6 +576,15 @@
             this.BtnHaritalar.Name = "BtnHaritalar";
             this.BtnHaritalar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHaritalar_ItemClick);
             // 
+            // BtnRaporlar
+            // 
+            this.BtnRaporlar.Caption = "Rapor Sihirbazı";
+            this.BtnRaporlar.Id = 48;
+            this.BtnRaporlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnRaporlar.ImageOptions.Image")));
+            this.BtnRaporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnRaporlar.ImageOptions.LargeImage")));
+            this.BtnRaporlar.Name = "BtnRaporlar";
+            this.BtnRaporlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnRaporlar_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -583,6 +594,7 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnAnaForm);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
@@ -781,14 +793,14 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // BtnRaporlar
+            // BtnAnaForm
             // 
-            this.BtnRaporlar.Caption = "Rapor Sihirbazı";
-            this.BtnRaporlar.Id = 48;
-            this.BtnRaporlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.BtnRaporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.BtnRaporlar.Name = "BtnRaporlar";
-            this.BtnRaporlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnRaporlar_ItemClick);
+            this.BtnAnaForm.Caption = "Ana Sayfa";
+            this.BtnAnaForm.Id = 49;
+            this.BtnAnaForm.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.BtnAnaForm.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.BtnAnaForm.Name = "BtnAnaForm";
+            this.BtnAnaForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAnaForm_ItemClick);
             // 
             // Form1
             // 
@@ -799,6 +811,7 @@
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
@@ -883,6 +896,7 @@
         private DevExpress.XtraBars.BarButtonItem BtnGauge;
         private DevExpress.XtraBars.BarButtonItem BtnHaritalar;
         private DevExpress.XtraBars.BarButtonItem BtnRaporlar;
+        private DevExpress.XtraBars.BarButtonItem BtnAnaForm;
     }
 }
 
