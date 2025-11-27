@@ -26,5 +26,8 @@ namespace TeknikServis_Web.Entity
         }
     
         public DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
+        public DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
+        public DbSet<TBLURUN> TBLURUN { get; set; }
+        public DbSet<TBLILETISIM> TBLILETISIM { get; set; }
     }
 }

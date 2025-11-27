@@ -31,6 +31,8 @@
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLCARI" />
         <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLPERSONEL" />
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNTAKIP" Width="1.5" PointX="10.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLHAKKIMIZDA" Width="1.5" PointX="12.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLILETISIM" Width="1.5" PointX="13.375" PointY="5.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -6,6 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="d16baf597c7b4e1ab67b86fe5a206008" Name="Diagram1">
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNTAKIP" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLHAKKIMIZDA" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUN" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLILETISIM" Width="1.5" PointX="3.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

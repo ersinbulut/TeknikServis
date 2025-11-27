@@ -206,5 +206,12 @@ namespace TeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnGauge_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGauge fr = new Formlar.FrmGauge();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

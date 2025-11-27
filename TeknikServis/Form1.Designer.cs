@@ -75,6 +75,7 @@
             this.BtnSatisListesi = new DevExpress.XtraBars.BarButtonItem();
             this.BtnArizaliUrunDetay = new DevExpress.XtraBars.BarButtonItem();
             this.BtnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnGauge = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -154,9 +155,10 @@
             this.BtnUrunSatis,
             this.BtnSatisListesi,
             this.BtnArizaliUrunDetay,
-            this.BtnFaturaListesi});
+            this.BtnFaturaListesi,
+            this.BtnGauge});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 46;
+            this.ribbonControl1.MaxItemId = 47;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -340,8 +342,8 @@
             // 
             this.BtnFaturaKalemListesi.Caption = "Detaylı Fatura Sorgulama";
             this.BtnFaturaKalemListesi.Id = 21;
-            this.BtnFaturaKalemListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.Image")));
-            this.BtnFaturaKalemListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.LargeImage")));
+            this.BtnFaturaKalemListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnFaturaKalemListesi.ImageOptions.Image")));
+            this.BtnFaturaKalemListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnFaturaKalemListesi.ImageOptions.LargeImage")));
             this.BtnFaturaKalemListesi.Name = "BtnFaturaKalemListesi";
             this.BtnFaturaKalemListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaKalemListesi_ItemClick);
             // 
@@ -550,6 +552,15 @@
             this.BtnFaturaListesi.Name = "BtnFaturaListesi";
             this.BtnFaturaListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaListesi_ItemClick);
             // 
+            // BtnGauge
+            // 
+            this.BtnGauge.Caption = "Gauge";
+            this.BtnGauge.Id = 46;
+            this.BtnGauge.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGauge.ImageOptions.Image")));
+            this.BtnGauge.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGauge.ImageOptions.LargeImage")));
+            this.BtnGauge.Name = "BtnGauge";
+            this.BtnGauge.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGauge_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -705,6 +716,7 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem30);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnWord);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnExcel);
+            this.ribbonPageGroup10.ItemLinks.Add(this.BtnGauge);
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem33);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "ribbonPageGroup10";
@@ -844,6 +856,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
         private DevExpress.XtraBars.BarButtonItem BtnArizaliUrunDetay;
         private DevExpress.XtraBars.BarButtonItem BtnFaturaListesi;
+        private DevExpress.XtraBars.BarButtonItem BtnGauge;
     }
 }
 

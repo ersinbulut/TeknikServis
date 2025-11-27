@@ -41,5 +41,7 @@ namespace TeknikServis
         public DbSet<TBLURUNHAREKET> TBLURUNHAREKET { get; set; }
         public DbSet<TBLURUNKABUL> TBLURUNKABUL { get; set; }
         public DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
+        public DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
+        public DbSet<TBLILETISIM> TBLILETISIM { get; set; }
     }
 }
