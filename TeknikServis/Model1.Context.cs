@@ -51,5 +51,20 @@ namespace TeknikServis
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<urunkategori_Result>("urunkategori");
         }
+    
+        public virtual ObjectResult<string> makskategoriurun()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("makskategoriurun");
+        }
+    
+        public virtual ObjectResult<maksurunmarka_Result> maksurunmarka()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<maksurunmarka_Result>("maksurunmarka");
+        }
+    
+        public virtual ObjectResult<maksurunmarka1_Result> maksurunmarka1()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<maksurunmarka1_Result>("maksurunmarka1");
+        }
     }
 }

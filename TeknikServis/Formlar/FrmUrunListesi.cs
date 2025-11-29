@@ -46,8 +46,7 @@ namespace TeknikServis.Formlar
                                                      x.ID,
                                                      x.AD
                                                  }).ToList();
-            lookUpEdit1.Properties.DisplayMember = "AD";
-            lookUpEdit1.Properties.ValueMember = "ID";
+      
 
         }
 
@@ -74,13 +73,20 @@ namespace TeknikServis.Formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtID.Text=gridView1.GetFocusedRowCellValue("ID").ToString();
-            txtUrunAd.Text= gridView1.GetFocusedRowCellValue("AD").ToString();
-            txtMarka.Text= gridView1.GetFocusedRowCellValue("MARKA").ToString();
-            txtStok.Text= gridView1.GetFocusedRowCellValue("STOK").ToString();
-            txtAlisfiyat.Text= gridView1.GetFocusedRowCellValue("ALISFIYAT").ToString();
-            txtSatisfiyat.Text= gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
-
+            try
+            {
+                txtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+                txtUrunAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
+                txtMarka.Text = gridView1.GetFocusedRowCellValue("MARKA").ToString();
+                txtStok.Text = gridView1.GetFocusedRowCellValue("STOK").ToString();
+                txtAlisfiyat.Text = gridView1.GetFocusedRowCellValue("ALISFIYAT").ToString();
+                txtSatisfiyat.Text = gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
+                lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("KATEGORİ").ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hata Oluştu Lütfen Tekrar Deneyiniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnSil_Click(object sender, EventArgs e)
@@ -104,6 +110,17 @@ namespace TeknikServis.Formlar
             urun.KATEGORİ = byte.Parse(lookUpEdit1.EditValue.ToString());
             db.SaveChanges();
             MessageBox.Show("Ürün Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            txtID.Text = "";
+            txtUrunAd.Text = "";
+            txtMarka.Text = "";
+            txtStok.Text = "";
+            txtAlisfiyat.Text = "";
+            txtSatisfiyat.Text = "";
+            lookUpEdit1.EditValue = null;
         }
     }
 }

@@ -20,8 +20,7 @@ namespace TeknikServis.Formlar
 
         private void btnVazgec_Click(object sender, EventArgs e)
         {
-           // FrmYeniUrun frm = new FrmYeniUrun();
-            //frm.Close();
+           this.Close();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -32,10 +31,26 @@ namespace TeknikServis.Formlar
             t.STOK = short.Parse(txtStok.Text);
             t.ALISFIYAT = decimal.Parse(txtAlisfiyat.Text);
             t.SATISFIYAT = decimal.Parse(txtSatisfiyat.Text);
-            t.KATEGORİ= byte.Parse(txtKategori.Text);
+            t.KATEGORİ = byte.Parse(lookUpEdit1.EditValue.ToString());
             db.TBLURUN.Add(t);
             db.SaveChanges();
             MessageBox.Show("Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void txtAd_Click(object sender, EventArgs e)
+        {
+            txtAd.Text = "";
+            txtAd.Focus();
+        }
+
+        private void FrmYeniUrun_Load(object sender, EventArgs e)
+        {
+            lookUpEdit1.Properties.DataSource = (from x in db.TBLKATEGORI
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     x.AD
+                                                 }).ToList();
         }
     }
 }

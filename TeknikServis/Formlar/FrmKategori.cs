@@ -35,20 +35,36 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            TBLKATEGORI t = new TBLKATEGORI();
-            t.AD = txtAd.Text;
-            db.TBLKATEGORI.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Kategori Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtAd.Text != "" && txtAd.Text.Length <= 30)
+            {
+                TBLKATEGORI t = new TBLKATEGORI();
+                t.AD = txtAd.Text;
+                db.TBLKATEGORI.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Kategori Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Kategori adı boş geçilemez ve kategori adı 30 karakterden uzun olamaz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+         
         }
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(txtID.Text);
-            var kategori = db.TBLKATEGORI.Find(id);
-            db.TBLKATEGORI.Remove(kategori);
-            db.SaveChanges();
-            MessageBox.Show("Kategori Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            DialogResult secenek = MessageBox.Show("Gerçekten Silme İşlemini Yapmak İstiyor Musunuz?", "Kontrol", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (secenek == DialogResult.Cancel)
+            {
+                MessageBox.Show("Silme İşlemi İptal Edildi!", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                int id = int.Parse(txtID.Text);
+                var deger = db.TBLKATEGORI.Find(id);
+                db.TBLKATEGORI.Remove(deger);
+                db.SaveChanges();
+                MessageBox.Show("Kategori Silme İşlemi Başarı ile Gerçekleşti!", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnListele_Click(object sender, EventArgs e)
@@ -71,6 +87,10 @@ namespace TeknikServis.Formlar
             MessageBox.Show("Kategori Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-   
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            txtAd.Text = "";
+            txtID.Text = "";
+        }
     }
 }

@@ -37,11 +37,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtAd = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnKaydet
@@ -51,7 +53,7 @@
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(137, 35);
             this.btnKaydet.TabIndex = 42;
-            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Text = "KATEGORİ EKLE";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // textEdit7
@@ -116,12 +118,27 @@
             this.pictureEdit1.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit1.TabIndex = 22;
             // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
+            this.pictureEdit2.Location = new System.Drawing.Point(281, -3);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit2.Size = new System.Drawing.Size(32, 32);
+            this.pictureEdit2.TabIndex = 43;
+            this.pictureEdit2.Click += new System.EventHandler(this.pictureEdit2_Click);
+            // 
             // FrmYeniKategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(314, 228);
+            this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.textEdit7);
             this.Controls.Add(this.pictureEdit7);
@@ -137,6 +154,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -150,5 +168,6 @@
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.TextEdit txtAd;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
     }
 }

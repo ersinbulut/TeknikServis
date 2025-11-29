@@ -20,11 +20,24 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            TBLKATEGORI t = new TBLKATEGORI();
-            t.AD = txtAd.Text;
-            db.TBLKATEGORI.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Kategori Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtAd.Text !="" && txtAd.Text.Length <= 30)
+            {
+                TBLKATEGORI t = new TBLKATEGORI();
+                t.AD = txtAd.Text;
+                db.TBLKATEGORI.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Kategori Başarıyla Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Kategori adı boş geçilemez ve kategori adı 30 karakterden uzun olamaz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void pictureEdit2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

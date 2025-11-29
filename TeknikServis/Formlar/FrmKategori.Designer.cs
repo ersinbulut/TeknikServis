@@ -56,6 +56,7 @@
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -161,6 +162,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.BtnTemizle);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.btnListele);
@@ -169,7 +171,7 @@
             this.groupControl1.Controls.Add(this.btnKaydet);
             this.groupControl1.Controls.Add(this.txtAd);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(859, -5);
+            this.groupControl1.Location = new System.Drawing.Point(859, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(451, 537);
             this.groupControl1.TabIndex = 3;
@@ -177,10 +179,10 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(3, -5);
+            this.gridControl1.Location = new System.Drawing.Point(3, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(818, 324);
+            this.gridControl1.Size = new System.Drawing.Size(850, 324);
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -218,7 +220,7 @@
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.pictureEdit2);
-            this.groupControl3.Location = new System.Drawing.Point(209, 325);
+            this.groupControl3.Location = new System.Drawing.Point(218, 325);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(200, 100);
             this.groupControl3.TabIndex = 5;
@@ -237,7 +239,7 @@
             // groupControl4
             // 
             this.groupControl4.Controls.Add(this.pictureEdit3);
-            this.groupControl4.Location = new System.Drawing.Point(415, 325);
+            this.groupControl4.Location = new System.Drawing.Point(435, 325);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Size = new System.Drawing.Size(200, 100);
             this.groupControl4.TabIndex = 6;
@@ -256,7 +258,7 @@
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.pictureEdit4);
-            this.groupControl5.Location = new System.Drawing.Point(621, 325);
+            this.groupControl5.Location = new System.Drawing.Point(653, 325);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(200, 100);
             this.groupControl5.TabIndex = 7;
@@ -294,7 +296,7 @@
             // groupControl7
             // 
             this.groupControl7.Controls.Add(this.pictureEdit6);
-            this.groupControl7.Location = new System.Drawing.Point(209, 432);
+            this.groupControl7.Location = new System.Drawing.Point(218, 431);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.Size = new System.Drawing.Size(200, 100);
             this.groupControl7.TabIndex = 9;
@@ -313,7 +315,7 @@
             // groupControl8
             // 
             this.groupControl8.Controls.Add(this.pictureEdit7);
-            this.groupControl8.Location = new System.Drawing.Point(415, 432);
+            this.groupControl8.Location = new System.Drawing.Point(435, 431);
             this.groupControl8.Name = "groupControl8";
             this.groupControl8.Size = new System.Drawing.Size(200, 100);
             this.groupControl8.TabIndex = 10;
@@ -332,7 +334,7 @@
             // groupControl9
             // 
             this.groupControl9.Controls.Add(this.pictureEdit8);
-            this.groupControl9.Location = new System.Drawing.Point(621, 432);
+            this.groupControl9.Location = new System.Drawing.Point(653, 431);
             this.groupControl9.Name = "groupControl9";
             this.groupControl9.Size = new System.Drawing.Size(200, 100);
             this.groupControl9.TabIndex = 11;
@@ -347,6 +349,16 @@
             this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit8.Size = new System.Drawing.Size(200, 79);
             this.pictureEdit8.TabIndex = 1;
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(130, 312);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(224, 42);
+            this.BtnTemizle.TabIndex = 21;
+            this.BtnTemizle.Text = "TEMİZLE";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // FrmKategori
             // 
@@ -430,5 +442,6 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.PictureEdit pictureEdit8;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }

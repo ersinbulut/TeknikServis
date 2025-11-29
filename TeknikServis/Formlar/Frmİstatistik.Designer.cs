@@ -981,7 +981,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Name = "Frmİstatistik";
-            this.Text = "Frmİstatistik";
+            this.Text = "İstatistikler";
             this.Load += new System.EventHandler(this.Frmİstatistik_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

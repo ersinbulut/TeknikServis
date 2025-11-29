@@ -312,6 +312,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="makskategoriurun" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="maksurunmarka" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="maksurunmarka1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="urunkategori" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DBTeknikServisModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
@@ -701,6 +704,9 @@
           <EntitySet Name="TBLHAKKIMIZDA" EntityType="DBTeknikServisModel.TBLHAKKIMIZDA" />
           <EntitySet Name="TBLILETISIM" EntityType="DBTeknikServisModel.TBLILETISIM" />
           <FunctionImport Name="urunkategori" ReturnType="Collection(DBTeknikServisModel.urunkategori_Result)" />
+          <FunctionImport Name="makskategoriurun" ReturnType="Collection(String)" />
+          <FunctionImport Name="maksurunmarka" ReturnType="Collection(DBTeknikServisModel.maksurunmarka_Result)" />
+          <FunctionImport Name="maksurunmarka1" ReturnType="Collection(DBTeknikServisModel.maksurunmarka1_Result)" />
         </EntityContainer>
         <EntityType Name="TBLURUNKABUL">
           <Key>
@@ -768,6 +774,14 @@
         <ComplexType Name="urunkategori_Result">
           <Property Type="String" Name="AD" Nullable="true" MaxLength="30" />
           <Property Type="Int32" Name="ADET" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="maksurunmarka_Result">
+          <Property Type="String" Name="MARKA" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Column1" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="maksurunmarka1_Result">
+          <Property Type="String" Name="MARKA" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Column1" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -985,6 +999,23 @@
               <ComplexTypeMapping TypeName="DBTeknikServisModel.urunkategori_Result">
                 <ScalarProperty Name="AD" ColumnName="AD" />
                 <ScalarProperty Name="ADET" ColumnName="ADET" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="makskategoriurun" FunctionName="DBTeknikServisModel.Store.makskategoriurun" />
+          <FunctionImportMapping FunctionImportName="maksurunmarka" FunctionName="DBTeknikServisModel.Store.maksurunmarka">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBTeknikServisModel.maksurunmarka_Result">
+                <ScalarProperty Name="MARKA" ColumnName="MARKA" />
+                <ScalarProperty Name="Column1" ColumnName="Column1" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="maksurunmarka1" FunctionName="DBTeknikServisModel.Store.maksurunmarka1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBTeknikServisModel.maksurunmarka1_Result">
+                <ScalarProperty Name="MARKA" ColumnName="MARKA" />
+                <ScalarProperty Name="Column1" ColumnName="Column1" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

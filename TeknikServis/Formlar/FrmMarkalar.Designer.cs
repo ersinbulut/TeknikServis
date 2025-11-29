@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMarkalar));
-            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView4 = new DevExpress.XtraCharts.PieSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView4 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,15 +58,15 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -89,21 +89,21 @@
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             this.panel8.SuspendLayout();
@@ -116,10 +116,10 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 1);
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(518, 528);
+            this.gridControl1.Size = new System.Drawing.Size(518, 529);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -373,12 +373,12 @@
             this.chartControl1.Location = new System.Drawing.Point(0, 102);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Pastel Kit";
-            series7.LegendTextPattern = "{A}";
-            series7.Name = "Series 1";
-            series7.SeriesID = 0;
-            series7.View = pieSeriesView4;
+            series1.LegendTextPattern = "{A}";
+            series1.Name = "Series 1";
+            series1.SeriesID = 0;
+            series1.View = pieSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series7};
+        series1};
             this.chartControl1.Size = new System.Drawing.Size(416, 281);
             this.chartControl1.TabIndex = 0;
             // 
@@ -393,14 +393,21 @@
             this.panelControl2.Size = new System.Drawing.Size(416, 303);
             this.panelControl2.TabIndex = 8;
             // 
-            // panelControl3
+            // chartControl2
             // 
-            this.panelControl3.Controls.Add(this.panel6);
-            this.panelControl3.Controls.Add(this.panel5);
-            this.panelControl3.Location = new System.Drawing.Point(946, 447);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(416, 74);
-            this.panelControl3.TabIndex = 9;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl2.Diagram = xyDiagram1;
+            this.chartControl2.Location = new System.Drawing.Point(0, 103);
+            this.chartControl2.Name = "chartControl2";
+            this.chartControl2.PaletteName = "Pastel Kit";
+            series2.Name = "Kategoriler";
+            series2.SeriesID = 2;
+            series2.View = stackedBarSeriesView1;
+            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series2};
+            this.chartControl2.Size = new System.Drawing.Size(416, 195);
+            this.chartControl2.TabIndex = 4;
             // 
             // pictureEdit6
             // 
@@ -433,43 +440,14 @@
             this.labelControl8.TabIndex = 4;
             this.labelControl8.Text = "Ürünler ve Kategoriler";
             // 
-            // chartControl2
+            // panelControl3
             // 
-            xyDiagram4.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram4.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl2.Diagram = xyDiagram4;
-            this.chartControl2.Location = new System.Drawing.Point(0, 103);
-            this.chartControl2.Name = "chartControl2";
-            this.chartControl2.PaletteName = "Pastel Kit";
-            series8.Name = "Kategoriler";
-            series8.SeriesID = 2;
-            series8.View = stackedBarSeriesView4;
-            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series8};
-            this.chartControl2.Size = new System.Drawing.Size(416, 195);
-            this.chartControl2.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Turquoise;
-            this.panel5.Controls.Add(this.pictureEdit7);
-            this.panel5.Location = new System.Drawing.Point(1, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(64, 74);
-            this.panel5.TabIndex = 0;
-            // 
-            // pictureEdit7
-            // 
-            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(5, 14);
-            this.pictureEdit7.Name = "pictureEdit7";
-            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit7.Size = new System.Drawing.Size(56, 50);
-            this.pictureEdit7.TabIndex = 9;
+            this.panelControl3.Controls.Add(this.panel6);
+            this.panelControl3.Controls.Add(this.panel5);
+            this.panelControl3.Location = new System.Drawing.Point(946, 447);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(416, 74);
+            this.panelControl3.TabIndex = 9;
             // 
             // panel6
             // 
@@ -492,6 +470,28 @@
             this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit8.Size = new System.Drawing.Size(56, 50);
             this.pictureEdit8.TabIndex = 9;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Turquoise;
+            this.panel5.Controls.Add(this.pictureEdit7);
+            this.panel5.Location = new System.Drawing.Point(1, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(64, 74);
+            this.panel5.TabIndex = 0;
+            // 
+            // pictureEdit7
+            // 
+            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
+            this.pictureEdit7.Location = new System.Drawing.Point(5, 14);
+            this.pictureEdit7.Name = "pictureEdit7";
+            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit7.Size = new System.Drawing.Size(56, 50);
+            this.pictureEdit7.TabIndex = 9;
             // 
             // panel7
             // 
@@ -599,7 +599,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmMarkalar";
-            this.Text = "FrmMarkalar";
+            this.Text = "Markalar";
             this.Load += new System.EventHandler(this.FrmMarkalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -619,23 +619,23 @@
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
             this.panel8.ResumeLayout(false);

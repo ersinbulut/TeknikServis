@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,19 +35,32 @@ namespace TeknikServis.Formlar
                                        orderby x.SATISFIYAT ascending
                                        select x.MARKA).FirstOrDefault();
 
-            chartControl1.Series["Series 1"].Points.AddPoint("Siemens", 4);
-            chartControl1.Series["Series 1"].Points.AddPoint("Arçelik", 6);
-            chartControl1.Series["Series 1"].Points.AddPoint("Beko", 2);
-            chartControl1.Series["Series 1"].Points.AddPoint("Toshiba", 8);
-            chartControl1.Series["Series 1"].Points.AddPoint("Lenovo", 5);
+            //chartControl1.Series["Series 1"].Points.AddPoint("Siemens", 4);
+            //chartControl1.Series["Series 1"].Points.AddPoint("Arçelik", 6);
+            //chartControl1.Series["Series 1"].Points.AddPoint("Beko", 2);
+            //chartControl1.Series["Series 1"].Points.AddPoint("Toshiba", 8);
+            //chartControl1.Series["Series 1"].Points.AddPoint("Lenovo", 5);
 
-            chartControl2.Series["Kategoriler"].Points.AddPoint("Beyaz Eşya", 4);
-            chartControl2.Series["Kategoriler"].Points.AddPoint("Bilgisayar", 3);
-            chartControl2.Series["Kategoriler"].Points.AddPoint("Telefon", 6);
-            chartControl2.Series["Kategoriler"].Points.AddPoint("Küçük Ev Aletleri", 8);
-            chartControl2.Series["Kategoriler"].Points.AddPoint("TV", 10);
-            chartControl2.Series["Kategoriler"].Points.AddPoint("Diğer", 2);
-                
+            SqlConnection baglanti = new SqlConnection(@"Data Source=BULUTS;Initial Catalog=DBTeknikServis;Integrated Security=True");
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("SELECT MARKA, COUNT(*) AS 'SAYI' FROM TBLURUN GROUP BY MARKA", baglanti);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                chartControl1.Series["Series 1"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
+            }
+            baglanti.Close();
+
+            //2. chart
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("SELECT TBLKATEGORI.AD, COUNT(*) FROM TBLURUN INNER JOIN TBLKATEGORI ON TBLKATEGORI.ID=TBLURUN.KATEGORİ GROUP BY TBLKATEGORI.AD", baglanti);
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                chartControl2.Series["Kategoriler"].Points.AddPoint(Convert.ToString(dr2[0]), int.Parse(dr2[1].ToString()));
+            }
+            baglanti.Close();
+
 
         }
     }

@@ -16,12 +16,15 @@ namespace TeknikServis
         {
             InitializeComponent();
         }
-
+        Formlar.FrmUrunListesi fr3;
         private void btnUrunListesiFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmUrunListesi fr = new Formlar.FrmUrunListesi();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr3 == null || fr3.IsDisposed)
+            {
+                fr3 = new Formlar.FrmUrunListesi();
+                fr3.MdiParent = this;
+                fr3.Show();
+            }
         }
 
         private void BtnYeniUrun_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -30,12 +33,15 @@ namespace TeknikServis
             //fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.FrmKategori fr2;
         private void BtnKategoriListe_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmKategori fr = new Formlar.FrmKategori();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr2 == null || fr2.IsDisposed)
+            {
+                fr2 = new Formlar.FrmKategori();
+                fr2.MdiParent = this;
+                fr2.Show();
+            }
         }
 
         private void BtnYeniKategori_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -44,19 +50,26 @@ namespace TeknikServis
             //fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.Frmİstatistik fr4;
         private void Btnistatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.Frmİstatistik fr = new Formlar.Frmİstatistik();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr4 == null || fr4.IsDisposed)
+            {
+                fr4 = new Formlar.Frmİstatistik();
+                fr4.MdiParent = this;
+                fr4.Show();
+            }
+         
         }
-
+        Formlar.FrmMarkalar fr5;
         private void btnMarkaİst_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmMarkalar fr = new Formlar.FrmMarkalar();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr5 ==null || fr4.IsDisposed)
+            {
+                fr5 = new Formlar.FrmMarkalar();
+                fr5.MdiParent = this;
+                fr5.Show();
+            }
         }
 
         private void BtnCariListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

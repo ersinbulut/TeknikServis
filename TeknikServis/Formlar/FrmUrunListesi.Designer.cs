@@ -32,6 +32,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnListele = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
@@ -48,24 +50,23 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtUrunAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStok.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSatisfiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlisfiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrunAd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(0, -1);
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(908, 550);
@@ -85,6 +86,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.BtnTemizle);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.btnListele);
@@ -103,15 +105,31 @@
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.txtUrunAd);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(914, -1);
+            this.groupControl1.Location = new System.Drawing.Point(914, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(451, 537);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "ÜRÜN İŞLEMLERİ";
             // 
+            // txtID
+            // 
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(130, 53);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(224, 20);
+            this.txtID.TabIndex = 20;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(78, 56);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(46, 13);
+            this.labelControl7.TabIndex = 19;
+            this.labelControl7.Text = "ÜRÜN ID:";
+            // 
             // btnListele
             // 
-            this.btnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnListele.ImageOptions.Image")));
             this.btnListele.Location = new System.Drawing.Point(130, 400);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(224, 42);
@@ -155,6 +173,8 @@
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(224, 20);
             this.lookUpEdit1.TabIndex = 14;
             // 
@@ -241,21 +261,15 @@
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "ÜRÜN ADI:";
             // 
-            // txtID
+            // BtnTemizle
             // 
-            this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(130, 53);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(224, 20);
-            this.txtID.TabIndex = 20;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(78, 56);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(46, 13);
-            this.labelControl7.TabIndex = 19;
-            this.labelControl7.Text = "ÜRÜN ID:";
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(130, 448);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(224, 42);
+            this.BtnTemizle.TabIndex = 21;
+            this.BtnTemizle.Text = "TEMİZLE";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // FrmUrunListesi
             // 
@@ -273,13 +287,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStok.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSatisfiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlisfiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrunAd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -307,5 +321,6 @@
         private DevExpress.XtraEditors.SimpleButton btnListele;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }

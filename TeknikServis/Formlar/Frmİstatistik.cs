@@ -51,7 +51,7 @@ namespace TeknikServis.Formlar
                                        group x by x.MARKA into g
                                        orderby g.Count() descending
                                        select g.Key).FirstOrDefault();
-            //lblarizaliurun.Text = db.TBLURUNHAREKET.Select(x=>x.TBLURUN.TBLURUNKABUL).Count().ToString();
+            lblarizaliurun.Text = db.TBLURUNKABUL.Count().ToString();
             //lbltamirurun.Text = db.TBLURUNHAREKET.Count(x => x.dur == true).ToString();
 
             lblbeyazesya.Text = db.TBLURUN.Count(x => x.KATEGORİ == 4).ToString();
@@ -59,6 +59,12 @@ namespace TeknikServis.Formlar
             lblbilgisayar.Text = db.TBLURUN.Count(x => x.KATEGORİ == 1).ToString();
 
             lblkucukevaleti.Text = db.TBLURUN.Count(x => x.KATEGORİ == 3).ToString();
+
+            lblEnfazlaurunkategorisi.Text=db.makskategoriurun().FirstOrDefault();
+
+            /*
+             5, 12, 14 15 16 17  panel
+             */
 
         }
 
