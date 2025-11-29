@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArizaListesi));
-            DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D8 = new DevExpress.XtraCharts.SimpleDiagram3D();
-            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView8 = new DevExpress.XtraCharts.Pie3DSeriesView();
+            DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D1 = new DevExpress.XtraCharts.SimpleDiagram3D();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView1 = new DevExpress.XtraCharts.Pie3DSeriesView();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.lblMarkasayisi = new DevExpress.XtraEditors.LabelControl();
+            this.lblMevcutArizaliUrunSayisi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.lblTadilatibitmisUrunSayisi = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.lblEnfazlaurun = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-            this.lblEnyuksekfiyatliMarka = new DevExpress.XtraEditors.LabelControl();
+            this.lblParcaBekleyenUrunSayisi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblMesajBeklenenMusteriler = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.lblİptalEdilenİslemler = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.lblToplamUrunSayisi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -71,9 +71,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
@@ -126,12 +126,13 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(189)))), ((int)(((byte)(227)))));
             this.panel2.Controls.Add(this.pictureEdit1);
-            this.panel2.Controls.Add(this.lblEnfazlaurun);
+            this.panel2.Controls.Add(this.lblMevcutArizaliUrunSayisi);
             this.panel2.Controls.Add(this.labelControl3);
             this.panel2.Location = new System.Drawing.Point(682, 17);
             this.panel2.Name = "panel2";
@@ -151,17 +152,17 @@
             this.pictureEdit1.Size = new System.Drawing.Size(60, 60);
             this.pictureEdit1.TabIndex = 8;
             // 
-            // lblMarkasayisi
+            // lblMevcutArizaliUrunSayisi
             // 
-            this.lblMarkasayisi.Appearance.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMarkasayisi.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lblMarkasayisi.Appearance.Options.UseFont = true;
-            this.lblMarkasayisi.Appearance.Options.UseForeColor = true;
-            this.lblMarkasayisi.Location = new System.Drawing.Point(16, 49);
-            this.lblMarkasayisi.Name = "lblMarkasayisi";
-            this.lblMarkasayisi.Size = new System.Drawing.Size(60, 47);
-            this.lblMarkasayisi.TabIndex = 1;
-            this.lblMarkasayisi.Text = "584";
+            this.lblMevcutArizaliUrunSayisi.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMevcutArizaliUrunSayisi.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblMevcutArizaliUrunSayisi.Appearance.Options.UseFont = true;
+            this.lblMevcutArizaliUrunSayisi.Appearance.Options.UseForeColor = true;
+            this.lblMevcutArizaliUrunSayisi.Location = new System.Drawing.Point(20, 57);
+            this.lblMevcutArizaliUrunSayisi.Name = "lblMevcutArizaliUrunSayisi";
+            this.lblMevcutArizaliUrunSayisi.Size = new System.Drawing.Size(110, 37);
+            this.lblMevcutArizaliUrunSayisi.TabIndex = 1;
+            this.lblMevcutArizaliUrunSayisi.Text = "ARÇELİK";
             // 
             // labelControl3
             // 
@@ -174,6 +175,18 @@
             this.labelControl3.Size = new System.Drawing.Size(149, 17);
             this.labelControl3.TabIndex = 0;
             this.labelControl3.Text = "Mevcut Arızalı Ürün Sayısı";
+            // 
+            // lblTadilatibitmisUrunSayisi
+            // 
+            this.lblTadilatibitmisUrunSayisi.Appearance.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTadilatibitmisUrunSayisi.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblTadilatibitmisUrunSayisi.Appearance.Options.UseFont = true;
+            this.lblTadilatibitmisUrunSayisi.Appearance.Options.UseForeColor = true;
+            this.lblTadilatibitmisUrunSayisi.Location = new System.Drawing.Point(16, 49);
+            this.lblTadilatibitmisUrunSayisi.Name = "lblTadilatibitmisUrunSayisi";
+            this.lblTadilatibitmisUrunSayisi.Size = new System.Drawing.Size(60, 47);
+            this.lblTadilatibitmisUrunSayisi.TabIndex = 1;
+            this.lblTadilatibitmisUrunSayisi.Text = "584";
             // 
             // panelControl1
             // 
@@ -198,18 +211,18 @@
             // 
             // chartControl1
             // 
-            simpleDiagram3D8.RotationMatrixSerializable = "1;0;0;0;0;0.488082107261485;-0.872797718014425;0;0;0.872797718014425;0.4880821072" +
+            simpleDiagram3D1.RotationMatrixSerializable = "1;0;0;0;0;0.488082107261485;-0.872797718014425;0;0;0.872797718014425;0.4880821072" +
     "61485;0;0;0;0;1";
-            this.chartControl1.Diagram = simpleDiagram3D8;
+            this.chartControl1.Diagram = simpleDiagram3D1;
             this.chartControl1.Location = new System.Drawing.Point(3, 103);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Pastel Kit";
-            series8.LegendTextPattern = "{A}";
-            series8.Name = "Series 1";
-            series8.SeriesID = 1;
-            series8.View = pie3DSeriesView8;
+            series1.LegendTextPattern = "{A}";
+            series1.Name = "Series 1";
+            series1.SeriesID = 1;
+            series1.View = pie3DSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series8};
+        series1};
             this.chartControl1.Size = new System.Drawing.Size(658, 156);
             this.chartControl1.TabIndex = 0;
             // 
@@ -225,18 +238,6 @@
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit2.Size = new System.Drawing.Size(60, 60);
             this.pictureEdit2.TabIndex = 8;
-            // 
-            // lblEnfazlaurun
-            // 
-            this.lblEnfazlaurun.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEnfazlaurun.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lblEnfazlaurun.Appearance.Options.UseFont = true;
-            this.lblEnfazlaurun.Appearance.Options.UseForeColor = true;
-            this.lblEnfazlaurun.Location = new System.Drawing.Point(20, 57);
-            this.lblEnfazlaurun.Name = "lblEnfazlaurun";
-            this.lblEnfazlaurun.Size = new System.Drawing.Size(110, 37);
-            this.lblEnfazlaurun.TabIndex = 1;
-            this.lblEnfazlaurun.Text = "ARÇELİK";
             // 
             // labelControl5
             // 
@@ -254,7 +255,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
             this.panel4.Controls.Add(this.pictureEdit4);
-            this.panel4.Controls.Add(this.lblEnyuksekfiyatliMarka);
+            this.panel4.Controls.Add(this.lblParcaBekleyenUrunSayisi);
             this.panel4.Controls.Add(this.labelControl7);
             this.panel4.Location = new System.Drawing.Point(1134, 17);
             this.panel4.Name = "panel4";
@@ -274,17 +275,17 @@
             this.pictureEdit4.Size = new System.Drawing.Size(60, 60);
             this.pictureEdit4.TabIndex = 8;
             // 
-            // lblEnyuksekfiyatliMarka
+            // lblParcaBekleyenUrunSayisi
             // 
-            this.lblEnyuksekfiyatliMarka.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEnyuksekfiyatliMarka.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lblEnyuksekfiyatliMarka.Appearance.Options.UseFont = true;
-            this.lblEnyuksekfiyatliMarka.Appearance.Options.UseForeColor = true;
-            this.lblEnyuksekfiyatliMarka.Location = new System.Drawing.Point(16, 57);
-            this.lblEnyuksekfiyatliMarka.Name = "lblEnyuksekfiyatliMarka";
-            this.lblEnyuksekfiyatliMarka.Size = new System.Drawing.Size(69, 37);
-            this.lblEnyuksekfiyatliMarka.TabIndex = 1;
-            this.lblEnyuksekfiyatliMarka.Text = "ACER";
+            this.lblParcaBekleyenUrunSayisi.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblParcaBekleyenUrunSayisi.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblParcaBekleyenUrunSayisi.Appearance.Options.UseFont = true;
+            this.lblParcaBekleyenUrunSayisi.Appearance.Options.UseForeColor = true;
+            this.lblParcaBekleyenUrunSayisi.Location = new System.Drawing.Point(16, 57);
+            this.lblParcaBekleyenUrunSayisi.Name = "lblParcaBekleyenUrunSayisi";
+            this.lblParcaBekleyenUrunSayisi.Size = new System.Drawing.Size(69, 37);
+            this.lblParcaBekleyenUrunSayisi.TabIndex = 1;
+            this.lblParcaBekleyenUrunSayisi.Text = "ACER";
             // 
             // labelControl7
             // 
@@ -303,7 +304,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
             this.panel3.Controls.Add(this.pictureEdit2);
             this.panel3.Controls.Add(this.labelControl5);
-            this.panel3.Controls.Add(this.lblMarkasayisi);
+            this.panel3.Controls.Add(this.lblTadilatibitmisUrunSayisi);
             this.panel3.Location = new System.Drawing.Point(908, 17);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(220, 120);
@@ -313,7 +314,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(163)))), ((int)(((byte)(164)))));
             this.panel1.Controls.Add(this.pictureEdit3);
-            this.panel1.Controls.Add(this.labelControl1);
+            this.panel1.Controls.Add(this.lblMesajBeklenenMusteriler);
             this.panel1.Controls.Add(this.labelControl6);
             this.panel1.Location = new System.Drawing.Point(682, 148);
             this.panel1.Name = "panel1";
@@ -333,17 +334,17 @@
             this.pictureEdit3.Size = new System.Drawing.Size(60, 60);
             this.pictureEdit3.TabIndex = 8;
             // 
-            // labelControl1
+            // lblMesajBeklenenMusteriler
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(16, 57);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(60, 47);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "584";
+            this.lblMesajBeklenenMusteriler.Appearance.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMesajBeklenenMusteriler.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblMesajBeklenenMusteriler.Appearance.Options.UseFont = true;
+            this.lblMesajBeklenenMusteriler.Appearance.Options.UseForeColor = true;
+            this.lblMesajBeklenenMusteriler.Location = new System.Drawing.Point(16, 57);
+            this.lblMesajBeklenenMusteriler.Name = "lblMesajBeklenenMusteriler";
+            this.lblMesajBeklenenMusteriler.Size = new System.Drawing.Size(60, 47);
+            this.lblMesajBeklenenMusteriler.TabIndex = 1;
+            this.lblMesajBeklenenMusteriler.Text = "584";
             // 
             // labelControl6
             // 
@@ -353,15 +354,15 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(16, 23);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(114, 17);
+            this.labelControl6.Size = new System.Drawing.Size(153, 17);
             this.labelControl6.TabIndex = 0;
-            this.labelControl6.Text = "Arızalı Ürünler Kasa";
+            this.labelControl6.Text = "Mesaj Beklenen Müşteriler";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
             this.panel5.Controls.Add(this.pictureEdit6);
-            this.panel5.Controls.Add(this.labelControl8);
+            this.panel5.Controls.Add(this.lblİptalEdilenİslemler);
             this.panel5.Controls.Add(this.labelControl9);
             this.panel5.Location = new System.Drawing.Point(1134, 148);
             this.panel5.Name = "panel5";
@@ -381,17 +382,17 @@
             this.pictureEdit6.Size = new System.Drawing.Size(60, 60);
             this.pictureEdit6.TabIndex = 8;
             // 
-            // labelControl8
+            // lblİptalEdilenİslemler
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(16, 57);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(69, 37);
-            this.labelControl8.TabIndex = 1;
-            this.labelControl8.Text = "ACER";
+            this.lblİptalEdilenİslemler.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblİptalEdilenİslemler.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblİptalEdilenİslemler.Appearance.Options.UseFont = true;
+            this.lblİptalEdilenİslemler.Appearance.Options.UseForeColor = true;
+            this.lblİptalEdilenİslemler.Location = new System.Drawing.Point(16, 57);
+            this.lblİptalEdilenİslemler.Name = "lblİptalEdilenİslemler";
+            this.lblİptalEdilenİslemler.Size = new System.Drawing.Size(69, 37);
+            this.lblİptalEdilenİslemler.TabIndex = 1;
+            this.lblİptalEdilenİslemler.Text = "ACER";
             // 
             // labelControl9
             // 
@@ -401,15 +402,15 @@
             this.labelControl9.Appearance.Options.UseForeColor = true;
             this.labelControl9.Location = new System.Drawing.Point(16, 23);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(127, 17);
+            this.labelControl9.Size = new System.Drawing.Size(113, 17);
             this.labelControl9.TabIndex = 0;
-            this.labelControl9.Text = "En Fazla Arızalı Marka";
+            this.labelControl9.Text = "İptal Edilen İşlemler";
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel6.Controls.Add(this.pictureEdit7);
-            this.panel6.Controls.Add(this.labelControl10);
+            this.panel6.Controls.Add(this.lblToplamUrunSayisi);
             this.panel6.Controls.Add(this.labelControl11);
             this.panel6.Location = new System.Drawing.Point(908, 148);
             this.panel6.Name = "panel6";
@@ -429,17 +430,17 @@
             this.pictureEdit7.Size = new System.Drawing.Size(60, 60);
             this.pictureEdit7.TabIndex = 8;
             // 
-            // labelControl10
+            // lblToplamUrunSayisi
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(16, 57);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(110, 37);
-            this.labelControl10.TabIndex = 1;
-            this.labelControl10.Text = "ARÇELİK";
+            this.lblToplamUrunSayisi.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblToplamUrunSayisi.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblToplamUrunSayisi.Appearance.Options.UseFont = true;
+            this.lblToplamUrunSayisi.Appearance.Options.UseForeColor = true;
+            this.lblToplamUrunSayisi.Location = new System.Drawing.Point(16, 57);
+            this.lblToplamUrunSayisi.Name = "lblToplamUrunSayisi";
+            this.lblToplamUrunSayisi.Size = new System.Drawing.Size(110, 37);
+            this.lblToplamUrunSayisi.TabIndex = 1;
+            this.lblToplamUrunSayisi.Text = "ARÇELİK";
             // 
             // labelControl11
             // 
@@ -467,7 +468,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Name = "FrmArizaListesi";
-            this.Text = "FrmArizaListesi";
+            this.Text = "Ariza Listesi";
             this.Load += new System.EventHandler(this.FrmArizaListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -478,9 +479,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -509,30 +510,30 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.LabelControl lblMarkasayisi;
+        private DevExpress.XtraEditors.LabelControl lblTadilatibitmisUrunSayisi;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraCharts.ChartControl chartControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
-        private DevExpress.XtraEditors.LabelControl lblEnfazlaurun;
+        private DevExpress.XtraEditors.LabelControl lblMevcutArizaliUrunSayisi;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
-        private DevExpress.XtraEditors.LabelControl lblEnyuksekfiyatliMarka;
+        private DevExpress.XtraEditors.LabelControl lblParcaBekleyenUrunSayisi;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblMesajBeklenenMusteriler;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private System.Windows.Forms.Panel panel5;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl lblİptalEdilenİslemler;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl lblToplamUrunSayisi;
         private DevExpress.XtraEditors.LabelControl labelControl11;
     }
 }

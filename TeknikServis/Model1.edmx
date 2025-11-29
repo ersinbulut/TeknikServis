@@ -182,6 +182,8 @@
           <Property Name="GELISTARIH" Type="smalldatetime" />
           <Property Name="CIKISTARIHI" Type="smalldatetime" />
           <Property Name="URUNSERINO" Type="char" MaxLength="5" />
+          <Property Name="URUNDURUM" Type="bit" />
+          <Property Name="URUNDURUMDETAY" Type="varchar" MaxLength="40" />
         </EntityType>
         <EntityType Name="TBLURUNTAKIP">
           <Key>
@@ -314,7 +316,6 @@
         </Association>
         <Function Name="makskategoriurun" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="maksurunmarka" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="maksurunmarka1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="urunkategori" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DBTeknikServisModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
@@ -720,6 +721,8 @@
           <NavigationProperty Name="TBLCARI" Relationship="DBTeknikServisModel.FK_TBLURUNKABUL_TBLCARI" FromRole="TBLURUNKABUL" ToRole="TBLCARI" />
           <NavigationProperty Name="TBLPERSONEL" Relationship="DBTeknikServisModel.FK_TBLURUNKABUL_TBLPERSONEL" FromRole="TBLURUNKABUL" ToRole="TBLPERSONEL" />
           <Property Name="URUNSERINO" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="URUNDURUM" Type="Boolean" />
+          <Property Name="URUNDURUMDETAY" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_TBLURUNKABUL_TBLCARI">
           <End Type="DBTeknikServisModel.TBLCARI" Role="TBLCARI" Multiplicity="0..1" />
@@ -956,6 +959,8 @@
           <EntitySetMapping Name="TBLURUNKABUL">
             <EntityTypeMapping TypeName="DBTeknikServisModel.TBLURUNKABUL">
               <MappingFragment StoreEntitySet="TBLURUNKABUL">
+                <ScalarProperty Name="URUNDURUMDETAY" ColumnName="URUNDURUMDETAY" />
+                <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
                 <ScalarProperty Name="URUNSERINO" ColumnName="URUNSERINO" />
                 <ScalarProperty Name="CIKISTARIHI" ColumnName="CIKISTARIHI" />
                 <ScalarProperty Name="GELISTARIH" ColumnName="GELISTARIH" />
@@ -1006,14 +1011,6 @@
           <FunctionImportMapping FunctionImportName="maksurunmarka" FunctionName="DBTeknikServisModel.Store.maksurunmarka">
             <ResultMapping>
               <ComplexTypeMapping TypeName="DBTeknikServisModel.maksurunmarka_Result">
-                <ScalarProperty Name="MARKA" ColumnName="MARKA" />
-                <ScalarProperty Name="Column1" ColumnName="Column1" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="maksurunmarka1" FunctionName="DBTeknikServisModel.Store.maksurunmarka1">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="DBTeknikServisModel.maksurunmarka1_Result">
                 <ScalarProperty Name="MARKA" ColumnName="MARKA" />
                 <ScalarProperty Name="Column1" ColumnName="Column1" />
               </ComplexTypeMapping>

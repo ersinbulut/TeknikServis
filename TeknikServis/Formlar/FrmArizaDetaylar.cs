@@ -22,12 +22,43 @@ namespace TeknikServis.Formlar
         {
             TBLURUNTAKIP t = new TBLURUNTAKIP();
             t.ACIKLAMA = richArizaDetay.Text;
-            t.SERINO = txtSerino.Text;
+            t.SERINO = txtSeriNo.Text;
             t.TARIH = DateTime.Parse(txtTarih.Text);
             db.TBLURUNTAKIP.Add(t);
+
+            //2.güncelleme
+            TBLURUNKABUL tb = new TBLURUNKABUL();
+           int urunid = int.Parse(id.ToString());
+            var deger = db.TBLURUNKABUL.Find(urunid);
+            deger.URUNDURUMDETAY = comboBox1.Text;
             db.SaveChanges();
             MessageBox.Show("Ürün Arıza Detayı Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void richArizaDetay_Click(object sender, EventArgs e)
+        {
+            richArizaDetay.Text = "";
+        }
+
+        private void txtSeriNo_Click(object sender, EventArgs e)
+        {
+            txtSeriNo.Text = "";
+        }
+
+        private void txtTarih_Click(object sender, EventArgs e)
+        {
+            txtTarih.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        public string id,serino;
+        private void FrmArizaDetaylar_Load(object sender, EventArgs e)
+        {
+           txtSeriNo.Text = serino;
         }
     }
 }

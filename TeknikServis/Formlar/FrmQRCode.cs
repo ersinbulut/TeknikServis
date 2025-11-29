@@ -23,5 +23,10 @@ namespace TeknikServis.Formlar
             QRCodeEncoder enc = new QRCodeEncoder();
             pictureEdit1.Image = enc.Encode(textEdit1.Text);
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
