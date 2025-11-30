@@ -107,6 +107,14 @@
           <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="METIN" Type="varchar" MaxLength="1000" />
         </EntityType>
+        <EntityType Name="TBLILCELER">
+          <Key>
+            <PropertyRef Name="ILCEID" />
+          </Key>
+          <Property Name="ILCEID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ILCEADI" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ILID" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="TBLILETISIM">
           <Key>
             <PropertyRef Name="ID" />
@@ -116,6 +124,13 @@
           <Property Name="MAIL" Type="varchar" MaxLength="50" />
           <Property Name="KONU" Type="varchar" MaxLength="50" />
           <Property Name="MESAJ" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="TBLILLER">
+          <Key>
+            <PropertyRef Name="ILID" />
+          </Key>
+          <Property Name="ILID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ILADI" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="TBLKATEGORI">
           <Key>
@@ -194,6 +209,18 @@
           <Property Name="TARIH" Type="smalldatetime" />
           <Property Name="SERINO" Type="char" MaxLength="5" />
         </EntityType>
+        <Association Name="FK__TBLILCELER__ILID__3E1D39E1">
+          <End Role="TBLILLER" Type="Self.TBLILLER" Multiplicity="1" />
+          <End Role="TBLILCELER" Type="Self.TBLILCELER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBLILLER">
+              <PropertyRef Name="ILID" />
+            </Principal>
+            <Dependent Role="TBLILCELER">
+              <PropertyRef Name="ILID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_TBLFATURABILGI_TBLCARI">
           <End Role="TBLCARI" Type="Self.TBLCARI" Multiplicity="0..1" />
           <End Role="TBLFATURABILGI" Type="Self.TBLFATURABILGI" Multiplicity="*" />
@@ -328,7 +355,9 @@
           <EntitySet Name="TBLFATURADETAY" EntityType="Self.TBLFATURADETAY" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLGIDER" EntityType="Self.TBLGIDER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLHAKKIMIZDA" EntityType="Self.TBLHAKKIMIZDA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLILCELER" EntityType="Self.TBLILCELER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLILETISIM" EntityType="Self.TBLILETISIM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLILLER" EntityType="Self.TBLILLER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLKATEGORI" EntityType="Self.TBLKATEGORI" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLNOTLARIM" EntityType="Self.TBLNOTLARIM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLPERSONEL" EntityType="Self.TBLPERSONEL" Schema="dbo" store:Type="Tables" />
@@ -336,6 +365,10 @@
           <EntitySet Name="TBLURUNHAREKET" EntityType="Self.TBLURUNHAREKET" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLURUNKABUL" EntityType="Self.TBLURUNKABUL" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLURUNTAKIP" EntityType="Self.TBLURUNTAKIP" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__TBLILCELER__ILID__3E1D39E1" Association="Self.FK__TBLILCELER__ILID__3E1D39E1">
+            <End Role="TBLILLER" EntitySet="TBLILLER" />
+            <End Role="TBLILCELER" EntitySet="TBLILCELER" />
+          </AssociationSet>
           <AssociationSet Name="FK_TBLFATURABILGI_TBLCARI" Association="Self.FK_TBLFATURABILGI_TBLCARI">
             <End Role="TBLCARI" EntitySet="TBLCARI" />
             <End Role="TBLFATURABILGI" EntitySet="TBLFATURABILGI" />
@@ -708,6 +741,12 @@
           <FunctionImport Name="makskategoriurun" ReturnType="Collection(String)" />
           <FunctionImport Name="maksurunmarka" ReturnType="Collection(DBTeknikServisModel.maksurunmarka_Result)" />
           <FunctionImport Name="maksurunmarka1" ReturnType="Collection(DBTeknikServisModel.maksurunmarka1_Result)" />
+          <EntitySet Name="TBLILCELER" EntityType="DBTeknikServisModel.TBLILCELER" />
+          <EntitySet Name="TBLILLER" EntityType="DBTeknikServisModel.TBLILLER" />
+          <AssociationSet Name="FK__TBLILCELER__ILID__3E1D39E1" Association="DBTeknikServisModel.FK__TBLILCELER__ILID__3E1D39E1">
+            <End Role="TBLILLER" EntitySet="TBLILLER" />
+            <End Role="TBLILCELER" EntitySet="TBLILCELER" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="TBLURUNKABUL">
           <Key>
@@ -786,6 +825,35 @@
           <Property Type="String" Name="MARKA" Nullable="true" MaxLength="30" />
           <Property Type="Int32" Name="Column1" Nullable="true" />
         </ComplexType>
+        <EntityType Name="TBLILCELER">
+          <Key>
+            <PropertyRef Name="ILCEID" />
+          </Key>
+          <Property Name="ILCEID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ILCEADI" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ILID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TBLILLER" Relationship="DBTeknikServisModel.FK__TBLILCELER__ILID__3E1D39E1" FromRole="TBLILCELER" ToRole="TBLILLER" />
+        </EntityType>
+        <EntityType Name="TBLILLER">
+          <Key>
+            <PropertyRef Name="ILID" />
+          </Key>
+          <Property Name="ILID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ILADI" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TBLILCELER" Relationship="DBTeknikServisModel.FK__TBLILCELER__ILID__3E1D39E1" FromRole="TBLILLER" ToRole="TBLILCELER" />
+        </EntityType>
+        <Association Name="FK__TBLILCELER__ILID__3E1D39E1">
+          <End Type="DBTeknikServisModel.TBLILLER" Role="TBLILLER" Multiplicity="1" />
+          <End Type="DBTeknikServisModel.TBLILCELER" Role="TBLILCELER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBLILLER">
+              <PropertyRef Name="ILID" />
+            </Principal>
+            <Dependent Role="TBLILCELER">
+              <PropertyRef Name="ILID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1016,6 +1084,23 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <EntitySetMapping Name="TBLILCELER">
+            <EntityTypeMapping TypeName="DBTeknikServisModel.TBLILCELER">
+              <MappingFragment StoreEntitySet="TBLILCELER">
+                <ScalarProperty Name="ILID" ColumnName="ILID" />
+                <ScalarProperty Name="ILCEADI" ColumnName="ILCEADI" />
+                <ScalarProperty Name="ILCEID" ColumnName="ILCEID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLILLER">
+            <EntityTypeMapping TypeName="DBTeknikServisModel.TBLILLER">
+              <MappingFragment StoreEntitySet="TBLILLER">
+                <ScalarProperty Name="ILADI" ColumnName="ILADI" />
+                <ScalarProperty Name="ILID" ColumnName="ILID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

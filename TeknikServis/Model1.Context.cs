@@ -46,6 +46,8 @@ namespace TeknikServis
         public DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
         public DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
         public DbSet<TBLILETISIM> TBLILETISIM { get; set; }
+        public DbSet<TBLILCELER> TBLILCELER { get; set; }
+        public DbSet<TBLILLER> TBLILLER { get; set; }
     
         public virtual ObjectResult<urunkategori_Result> urunkategori()
         {

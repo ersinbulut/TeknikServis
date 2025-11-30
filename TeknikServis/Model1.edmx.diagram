@@ -33,6 +33,9 @@
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNTAKIP" Width="1.5" PointX="10.375" PointY="12.75" />
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLHAKKIMIZDA" Width="1.5" PointX="12.375" PointY="12.75" />
         <EntityTypeShape EntityType="DBTeknikServisModel.TBLILETISIM" Width="1.5" PointX="13.375" PointY="5.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLILCELER" Width="1.5" PointX="16.625" PointY="0.875" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLILLER" Width="1.5" PointX="14.375" PointY="1" />
+        <AssociationConnector Association="DBTeknikServisModel.FK__TBLILCELER__ILID__3E1D39E1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
