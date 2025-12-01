@@ -27,8 +27,9 @@ namespace TeknikServis.Formlar
                                x.AD,
                            };
             gridControl1.DataSource = degerler.ToList();
-            labelControl12.Text = db.TBLDEPARTMAN.Count().ToString();
-            labelControl14.Text = db.TBLPERSONEL.Count().ToString();
+            lblToplamDepartman.Text = db.TBLDEPARTMAN.Count().ToString();
+            lblToplamPersonelSayisi.Text = db.TBLPERSONEL.Count().ToString();
+           
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)

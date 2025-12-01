@@ -92,5 +92,12 @@ namespace TeknikServis.Formlar
             db.SaveChanges();
             MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+       
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaKalemPopup fr = new FrmFaturaKalemPopup();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("ID").ToString());
+            fr.Show();
+        }
     }
 }

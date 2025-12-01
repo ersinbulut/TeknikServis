@@ -41,7 +41,7 @@ namespace TeknikServis.Formlar
             //chartControl1.Series["Series 1"].Points.AddPoint("Toshiba", 8);
             //chartControl1.Series["Series 1"].Points.AddPoint("Lenovo", 5);
 
-            SqlConnection baglanti = new SqlConnection(@"Data Source=BULUTS;Initial Catalog=DBTeknikServis;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DEV;Initial Catalog=DBTeknikServis;Integrated Security=True");
             baglanti.Open();
             SqlCommand komut = new SqlCommand("SELECT MARKA, COUNT(*) AS 'SAYI' FROM TBLURUN GROUP BY MARKA", baglanti);
             SqlDataReader dr = komut.ExecuteReader();

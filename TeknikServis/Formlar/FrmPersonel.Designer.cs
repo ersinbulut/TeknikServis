@@ -157,6 +157,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(224, 42);
             this.btnKaydet.TabIndex = 15;
             this.btnKaydet.Text = "KAYDET";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // labelControl1
             // 
@@ -289,7 +290,7 @@
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(162, 160);
+            this.pictureEdit1.Size = new System.Drawing.Size(162, 114);
             this.pictureEdit1.TabIndex = 7;
             // 
             // labelControl13
@@ -298,7 +299,7 @@
             this.labelControl13.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl13.Appearance.Options.UseFont = true;
             this.labelControl13.Appearance.Options.UseForeColor = true;
-            this.labelControl13.Location = new System.Drawing.Point(9, 189);
+            this.labelControl13.Location = new System.Drawing.Point(32, 139);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(59, 17);
             this.labelControl13.TabIndex = 0;
@@ -306,7 +307,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(137)))), ((int)(((byte)(167)))));
             this.panel1.Controls.Add(this.labelControl8);
             this.panel1.Controls.Add(this.labelControl6);
             this.panel1.Controls.Add(this.labelControl5);
@@ -316,7 +317,7 @@
             this.panel1.Controls.Add(this.labelControl13);
             this.panel1.Location = new System.Drawing.Point(3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 270);
+            this.panel1.Size = new System.Drawing.Size(226, 223);
             this.panel1.TabIndex = 20;
             // 
             // labelControl8
@@ -325,7 +326,7 @@
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(74, 235);
+            this.labelControl8.Location = new System.Drawing.Point(97, 185);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(62, 17);
             this.labelControl8.TabIndex = 12;
@@ -337,7 +338,7 @@
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(40, 235);
+            this.labelControl6.Location = new System.Drawing.Point(63, 185);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(28, 17);
             this.labelControl6.TabIndex = 11;
@@ -349,7 +350,7 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(74, 212);
+            this.labelControl5.Location = new System.Drawing.Point(97, 162);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(62, 17);
             this.labelControl5.TabIndex = 10;
@@ -361,7 +362,7 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(3, 211);
+            this.labelControl4.Location = new System.Drawing.Point(26, 161);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(68, 17);
             this.labelControl4.TabIndex = 9;
@@ -373,7 +374,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(74, 189);
+            this.labelControl3.Location = new System.Drawing.Point(97, 139);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(62, 17);
             this.labelControl3.TabIndex = 8;
@@ -392,17 +393,17 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(3, 276);
+            this.gridControl1.Location = new System.Drawing.Point(3, 229);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(923, 266);
+            this.gridControl1.Size = new System.Drawing.Size(923, 313);
             this.gridControl1.TabIndex = 18;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(203)))), ((int)(((byte)(56)))));
             this.panel2.Controls.Add(this.labelControl9);
             this.panel2.Controls.Add(this.labelControl10);
             this.panel2.Controls.Add(this.labelControl11);
@@ -412,7 +413,7 @@
             this.panel2.Controls.Add(this.labelControl15);
             this.panel2.Location = new System.Drawing.Point(235, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(226, 270);
+            this.panel2.Size = new System.Drawing.Size(226, 223);
             this.panel2.TabIndex = 21;
             // 
             // labelControl9
@@ -421,7 +422,7 @@
             this.labelControl9.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Appearance.Options.UseForeColor = true;
-            this.labelControl9.Location = new System.Drawing.Point(97, 237);
+            this.labelControl9.Location = new System.Drawing.Point(104, 188);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(62, 17);
             this.labelControl9.TabIndex = 12;
@@ -433,7 +434,7 @@
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(63, 236);
+            this.labelControl10.Location = new System.Drawing.Point(70, 187);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(28, 17);
             this.labelControl10.TabIndex = 11;
@@ -445,7 +446,7 @@
             this.labelControl11.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl11.Appearance.Options.UseFont = true;
             this.labelControl11.Appearance.Options.UseForeColor = true;
-            this.labelControl11.Location = new System.Drawing.Point(97, 211);
+            this.labelControl11.Location = new System.Drawing.Point(104, 162);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(62, 17);
             this.labelControl11.TabIndex = 10;
@@ -457,7 +458,7 @@
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl12.Appearance.Options.UseFont = true;
             this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.Location = new System.Drawing.Point(23, 211);
+            this.labelControl12.Location = new System.Drawing.Point(30, 162);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(68, 17);
             this.labelControl12.TabIndex = 9;
@@ -469,7 +470,7 @@
             this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl14.Appearance.Options.UseFont = true;
             this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(97, 188);
+            this.labelControl14.Location = new System.Drawing.Point(104, 139);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(62, 17);
             this.labelControl14.TabIndex = 8;
@@ -485,7 +486,7 @@
             this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit2.Size = new System.Drawing.Size(162, 160);
+            this.pictureEdit2.Size = new System.Drawing.Size(162, 114);
             this.pictureEdit2.TabIndex = 7;
             // 
             // labelControl15
@@ -494,7 +495,7 @@
             this.labelControl15.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl15.Appearance.Options.UseFont = true;
             this.labelControl15.Appearance.Options.UseForeColor = true;
-            this.labelControl15.Location = new System.Drawing.Point(32, 188);
+            this.labelControl15.Location = new System.Drawing.Point(39, 139);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(59, 17);
             this.labelControl15.TabIndex = 0;
@@ -502,7 +503,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(159)))), ((int)(((byte)(31)))));
             this.panel3.Controls.Add(this.labelControl16);
             this.panel3.Controls.Add(this.labelControl17);
             this.panel3.Controls.Add(this.labelControl18);
@@ -512,7 +513,7 @@
             this.panel3.Controls.Add(this.labelControl21);
             this.panel3.Location = new System.Drawing.Point(467, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(226, 270);
+            this.panel3.Size = new System.Drawing.Size(226, 223);
             this.panel3.TabIndex = 21;
             // 
             // labelControl16
@@ -521,7 +522,7 @@
             this.labelControl16.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl16.Appearance.Options.UseFont = true;
             this.labelControl16.Appearance.Options.UseForeColor = true;
-            this.labelControl16.Location = new System.Drawing.Point(97, 237);
+            this.labelControl16.Location = new System.Drawing.Point(100, 188);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(62, 17);
             this.labelControl16.TabIndex = 12;
@@ -533,7 +534,7 @@
             this.labelControl17.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl17.Appearance.Options.UseFont = true;
             this.labelControl17.Appearance.Options.UseForeColor = true;
-            this.labelControl17.Location = new System.Drawing.Point(63, 236);
+            this.labelControl17.Location = new System.Drawing.Point(66, 187);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(28, 17);
             this.labelControl17.TabIndex = 11;
@@ -545,7 +546,7 @@
             this.labelControl18.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl18.Appearance.Options.UseFont = true;
             this.labelControl18.Appearance.Options.UseForeColor = true;
-            this.labelControl18.Location = new System.Drawing.Point(97, 211);
+            this.labelControl18.Location = new System.Drawing.Point(100, 162);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(62, 17);
             this.labelControl18.TabIndex = 10;
@@ -557,7 +558,7 @@
             this.labelControl19.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl19.Appearance.Options.UseFont = true;
             this.labelControl19.Appearance.Options.UseForeColor = true;
-            this.labelControl19.Location = new System.Drawing.Point(23, 211);
+            this.labelControl19.Location = new System.Drawing.Point(26, 162);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(68, 17);
             this.labelControl19.TabIndex = 9;
@@ -569,7 +570,7 @@
             this.labelControl20.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl20.Appearance.Options.UseFont = true;
             this.labelControl20.Appearance.Options.UseForeColor = true;
-            this.labelControl20.Location = new System.Drawing.Point(97, 188);
+            this.labelControl20.Location = new System.Drawing.Point(100, 139);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(62, 17);
             this.labelControl20.TabIndex = 8;
@@ -585,7 +586,7 @@
             this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit3.Size = new System.Drawing.Size(162, 160);
+            this.pictureEdit3.Size = new System.Drawing.Size(162, 114);
             this.pictureEdit3.TabIndex = 7;
             // 
             // labelControl21
@@ -594,7 +595,7 @@
             this.labelControl21.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl21.Appearance.Options.UseFont = true;
             this.labelControl21.Appearance.Options.UseForeColor = true;
-            this.labelControl21.Location = new System.Drawing.Point(32, 188);
+            this.labelControl21.Location = new System.Drawing.Point(35, 139);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(59, 17);
             this.labelControl21.TabIndex = 0;
@@ -602,7 +603,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(18)))));
             this.panel4.Controls.Add(this.labelControl22);
             this.panel4.Controls.Add(this.labelControl23);
             this.panel4.Controls.Add(this.labelControl24);
@@ -612,7 +613,7 @@
             this.panel4.Controls.Add(this.labelControl27);
             this.panel4.Location = new System.Drawing.Point(700, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(226, 270);
+            this.panel4.Size = new System.Drawing.Size(226, 223);
             this.panel4.TabIndex = 21;
             // 
             // labelControl22
@@ -621,7 +622,7 @@
             this.labelControl22.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl22.Appearance.Options.UseFont = true;
             this.labelControl22.Appearance.Options.UseForeColor = true;
-            this.labelControl22.Location = new System.Drawing.Point(97, 237);
+            this.labelControl22.Location = new System.Drawing.Point(97, 188);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(62, 17);
             this.labelControl22.TabIndex = 12;
@@ -633,7 +634,7 @@
             this.labelControl23.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl23.Appearance.Options.UseFont = true;
             this.labelControl23.Appearance.Options.UseForeColor = true;
-            this.labelControl23.Location = new System.Drawing.Point(63, 236);
+            this.labelControl23.Location = new System.Drawing.Point(63, 187);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(28, 17);
             this.labelControl23.TabIndex = 11;
@@ -645,7 +646,7 @@
             this.labelControl24.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl24.Appearance.Options.UseFont = true;
             this.labelControl24.Appearance.Options.UseForeColor = true;
-            this.labelControl24.Location = new System.Drawing.Point(97, 211);
+            this.labelControl24.Location = new System.Drawing.Point(97, 162);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(62, 17);
             this.labelControl24.TabIndex = 10;
@@ -657,7 +658,7 @@
             this.labelControl25.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl25.Appearance.Options.UseFont = true;
             this.labelControl25.Appearance.Options.UseForeColor = true;
-            this.labelControl25.Location = new System.Drawing.Point(23, 211);
+            this.labelControl25.Location = new System.Drawing.Point(23, 162);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(68, 17);
             this.labelControl25.TabIndex = 9;
@@ -669,7 +670,7 @@
             this.labelControl26.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl26.Appearance.Options.UseFont = true;
             this.labelControl26.Appearance.Options.UseForeColor = true;
-            this.labelControl26.Location = new System.Drawing.Point(97, 188);
+            this.labelControl26.Location = new System.Drawing.Point(97, 139);
             this.labelControl26.Name = "labelControl26";
             this.labelControl26.Size = new System.Drawing.Size(62, 17);
             this.labelControl26.TabIndex = 8;
@@ -685,7 +686,7 @@
             this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit4.Size = new System.Drawing.Size(162, 160);
+            this.pictureEdit4.Size = new System.Drawing.Size(162, 114);
             this.pictureEdit4.TabIndex = 7;
             // 
             // labelControl27
@@ -694,7 +695,7 @@
             this.labelControl27.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl27.Appearance.Options.UseFont = true;
             this.labelControl27.Appearance.Options.UseForeColor = true;
-            this.labelControl27.Location = new System.Drawing.Point(32, 188);
+            this.labelControl27.Location = new System.Drawing.Point(32, 139);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(59, 17);
             this.labelControl27.TabIndex = 0;
@@ -712,7 +713,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmPersonel";
-            this.Text = "FrmPersonel";
+            this.Text = "Personeller";
             this.Load += new System.EventHandler(this.FrmPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

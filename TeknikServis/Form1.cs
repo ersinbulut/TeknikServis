@@ -98,12 +98,15 @@ namespace TeknikServis
             //fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.FrmDepartman fr11;
         private void BtnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmDepartman fr = new Formlar.FrmDepartman();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr11==null || fr11.IsDisposed)
+            {
+                fr11 = new Formlar.FrmDepartman();
+                fr11.MdiParent = this;
+                fr11.Show();
+            }
         }
 
         private void btnYeniDepartman_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -112,24 +115,30 @@ namespace TeknikServis
            // fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.FrmPersonel fr10;
         private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmPersonel fr = new Formlar.FrmPersonel();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr10==null || fr10.IsDisposed)
+            {
+                fr10 = new Formlar.FrmPersonel();
+                fr10.MdiParent = this;
+                fr10.Show();
+            }
         }
 
         private void BtnHesapMakinesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             System.Diagnostics.Process.Start("calc.exe");
         }
-
+        Formlar.FrmKurlar fr13;
         private void BtnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmKurlar fr = new Formlar.FrmKurlar();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr13==null || fr13.IsDisposed)
+            {
+                fr13 = new Formlar.FrmKurlar();
+                fr13.MdiParent = this;
+                fr13.Show();
+            }
         }
 
         private void BtnWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -141,19 +150,25 @@ namespace TeknikServis
         {
             System.Diagnostics.Process.Start("excel");
         }
-
+        Formlar.FrmYoutube fr14;
         private void BtnYoutube_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmYoutube fr = new Formlar.FrmYoutube();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr14==null || fr14.IsDisposed)
+            {
+                fr14 = new Formlar.FrmYoutube();
+                fr14.MdiParent = this;
+                fr14.Show();
+            }
         }
-
+        Formlar.FrmNotlar fr12;
         private void BtnNotİslemleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmNotlar fr = new Formlar.FrmNotlar();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr12==null || fr12.IsDisposed)
+            {
+                fr12 = new Formlar.FrmNotlar();
+                fr12.MdiParent = this;
+                fr12.Show();
+            }
         }
         Formlar.FrmArizaListesi fr6;
         private void BtnArizaliUrunListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -228,19 +243,25 @@ namespace TeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.FrmGauge fr15;
         private void BtnGauge_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmGauge fr = new Formlar.FrmGauge();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr15==null || fr15.IsDisposed)
+            {
+                fr15 = new Formlar.FrmGauge();
+                fr15.MdiParent = this;
+                fr15.Show();
+            }
         }
-
+        Formlar.FrmHarita fr16;
         private void BtnHaritalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmHarita fr = new Formlar.FrmHarita();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr16 == null || fr16.IsDisposed)
+            {
+                fr16 = new Formlar.FrmHarita();
+                fr16.MdiParent = this;
+                fr16.Show();
+            }
         }
 
         private void BtnRaporlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -268,6 +289,36 @@ namespace TeknikServis
                 fr = new Formlar.FrmAnaSayfa();
                 fr.MdiParent = this;
                 fr.Show();
+            }
+        }
+        İletisim.FrmRehber fr17;
+        private void BtnRehber_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if( fr17==null || fr17.IsDisposed)
+            {
+                fr17 = new İletisim.FrmRehber();
+                fr17.MdiParent = this;
+                fr17.Show();
+            }
+        }
+        İletisim.FrmGelenMesajlar fr18;
+        private void BtnGelenMesajlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr18 == null || fr18.IsDisposed)
+            {
+                fr18 = new İletisim.FrmGelenMesajlar();
+                fr18.MdiParent = this;
+                fr18.Show();
+            }
+        }
+        İletisim.FrmMail fr19;
+        private void BtnYeniMail_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr19 == null || fr19.IsDisposed)
+            {
+                fr19 = new İletisim.FrmMail();
+                //fr19.MdiParent = this;
+                fr19.Show();
             }
         }
     }

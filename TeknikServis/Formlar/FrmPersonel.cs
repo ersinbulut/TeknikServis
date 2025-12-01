@@ -18,8 +18,7 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-
-        private void FrmPersonel_Load(object sender, EventArgs e)
+        public void liste()
         {
             var degerler = from u in db.TBLPERSONEL
                            select new
@@ -32,7 +31,10 @@ namespace TeknikServis.Formlar
                                u.DEPARTMAN
                            };
             gridControl1.DataSource = degerler.ToList();
-
+        }
+        private void FrmPersonel_Load(object sender, EventArgs e)
+        {
+            liste();
             lupDepartman.Properties.DataSource = (from x in db.TBLDEPARTMAN
                                                   select new
                                                   {
@@ -132,17 +134,24 @@ namespace TeknikServis.Formlar
 
         private void btnListele_Click(object sender, EventArgs e)
         {
-            var degerler = from u in db.TBLPERSONEL
-                           select new
-                           {
-                               u.ID,
-                               u.AD,
-                               u.SOYAD,
-                               u.MAIL,
-                               u.TELEFON,
-                           };
-            gridControl1.DataSource = degerler.ToList();
+            liste();
+        }
 
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            TBLPERSONEL t=new TBLPERSONEL();
+            t.AD = txtAd.Text;
+            t.SOYAD = txtSoyad.Text;
+            t.DEPARTMAN = Convert.ToByte(lupDepartman.EditValue);
+            t.FOTOGRAF = txtFotograf.Text;
+            t.MAIL = txtMail.Text;
+            t.TELEFON = txtTelefon.Text;
+            db.TBLPERSONEL.Add(t);
+            db.SaveChanges();
+            XtraMessageBox.Show("Personel Başarıyla Kaydedildi",
+                                "Bilgi",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
         }
     }
 }

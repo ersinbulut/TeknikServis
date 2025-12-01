@@ -53,7 +53,7 @@
             this.ClientSize = new System.Drawing.Size(1370, 541);
             this.Controls.Add(this.mapControl1);
             this.Name = "FrmHarita";
-            this.Text = "FrmHarita";
+            this.Text = "Harita";
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
             this.ResumeLayout(false);
 
